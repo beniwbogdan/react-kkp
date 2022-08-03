@@ -30,5 +30,5 @@ function AccordionBody() {
     )
 }
 export default Accordion;
-export default AccordionTitle;
-export default AccordionBody;
+// export default AccordionTitle;
+// export default AccordionBody;

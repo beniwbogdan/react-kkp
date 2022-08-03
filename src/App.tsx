@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
+import Accordion from './components/Accordion/Accordion';
+import Rating from './components/Rating/Rating';
 
 function App() {
   return (
     <div className="App">
-      <div>start</div>
-      <div>start</div>
-      <div>start</div>
-      <div>start</div>
-      <div>start</div>
+      <Rating />
+      <Accordion />
     </div>
   );
 }
