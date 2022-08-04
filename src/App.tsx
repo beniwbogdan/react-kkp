@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <OnOff on={true} />
+      <OnOff on={false} />
       <Rating value={1} />
       <Rating value={2} />
       <Rating value={3} />
