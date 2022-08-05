@@ -6,9 +6,11 @@ import Rating from './components/Rating/Rating';
 
 function App() {
 
+
+
   return (
     <div className="App">
-      <OnOff on={false} />
+      <OnOff />
       <Rating value={1} />
       <Rating value={2} />
       <Rating value={3} />

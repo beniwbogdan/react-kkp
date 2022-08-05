@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 type OnOffType = {
-    on: boolean
+    //   on: boolean
 }
 
-function OnOff({ on }: OnOffType) {
+function OnOff(props: OnOffType) {
+    let [on, setOn] = useState(false);
+
 
     const mainStyle = {
         display: "flex",
@@ -30,11 +32,18 @@ function OnOff({ on }: OnOffType) {
         border: "1px solid black"
     }
 
+
+
     return (
         <div style={mainStyle}>
             <div style={indicatorStyle}></div>
-            <div style={onStyle}>On</div>
-            <div style={offStyle}>Off</div>
+            <div onClick={() => {
+                setOn(!on)
+
+            }} style={onStyle}>On</div>
+            <div onClick={() => {
+                setOn(!on)
+            }} style={offStyle}>Off</div>
         </div>
     )
 }
